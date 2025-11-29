@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators!</title>
+    <style>
+        /* body{
+            color: beige;
+        } */
+        /* p{
+            color: blue;
+        } */
+        div{
+            color: brown;
+        }
+        /* #box p{
+            color: rgb(219, 16, 16);
+        } */
+
+        /* #box > p {
+            color: darkolivegreen;
+        } */
+
+        #box ~ p {
+            color: rgb(85, 155, 58);
+        }
+
+        a:link {
+            text-decoration: none; font-size: 12px; font-weight: bold;
+
+        }
+
+        a:hover {
+            color: blueviolet; font-size: 30px; text-shadow: 2px 2px;
+        }
+
+        /* ul .odd{
+            color: blue;
+        }
+        ul .even{
+            color: red;
+        } */
+
+         /* ul li:nth-child(odd){
+            color: blue;
+         } */
+
+         ul li:nth-child(3), ul li:nth-child(5) {
+            color: red;
+         }
+
+         ul li::first-letter{
+            color: blueviolet; font-size: 30px;
+         }
+
+         ul li::after{
+            content: "read more";
+            color: cyan;
+         }
+         ::marker{
+            color: aqua;
+         }
+
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sequi nulla excepturi aliquid perspiciatis non ipsum, dolores ad voluptatem. Consequatur laboriosam incidunt cum praesentium, pariatur commodi consequuntur neque voluptatem quas?
+        </p>
+
+        <table>
+            <tr>
+                <td>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquam neque aut delectus rem impedit libero ad quos ea quidem vel culpa laborum nesciunt, odio ducimus voluptatum quibusdam natus necessitatibus?</p>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae totam iste, asperiores amet distinctio pariatur ratione recusandae perspiciatis perferendis accusamus dolorem. Maxime doloribus numquam inventore officia officiis dicta facere?
+            </p>
+        </div>
+    </div>
+
+    <h2>
+        Hello ABES
+    </h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque autem similique eligendi eum iusto commodi, fuga, quasi exercitationem labore aperiam excepturi animi ad voluptatibus magnam eos! Eius officiis fuga molestiae.
+    </p>
+
+    <a href="">Visit This link</a>
+
+    <ul>
+        <li>hello</li>
+        <li>hi</li>
+        <li>kay</li>
+        <li>nword</li>
+        <li>ohh</li>
+    </ul>
+</body>
+</html>
