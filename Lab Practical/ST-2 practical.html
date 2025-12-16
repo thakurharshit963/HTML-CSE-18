@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cool T-Shirt - Only 299</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.row {
+  display: flex;
+  gap: 40px;
+}
+.col {
+  flex: 1;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+.price {
+  font-size: 36px;
+  color: red;
+  font-weight: bold;
+}
+.old {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 10px;
+  font-size: 22px;
+}
+p {
+  color: #555;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+.sizes {
+  margin: 20px 0;
+}
+.sizes button {
+  padding: 12px 18px;
+  margin: 5px;
+  border: 2px solid #333;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sizes button:hover {
+  background: #333;
+  color: white;
+}
+.cart-btn {
+  background: orange;
+  color: white;
+  padding: 18px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+.cart-btn:hover {
+  background: darkorange;
+}
+.info {
+  margin-top: 30px;
+  color: green;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .row { flex-direction: column; }
+  .cart-btn { padding: 15px; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="T-Shirt">
+    </div>
+    <div class="col">
+      <h1>Premium white T-Shirt</h1>
+      <div class="price">999 <span class="old">1000</span></div>
+      <p>Soft & comfortable 100% cotton t-shirt. Perfect for casual wear. Limited stock – grab it now!</p>
+      
+      <div class="sizes">
+        <strong>Choose Size:</strong><br><br>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+      </div>
+      
+      <button class="cart-btn">Add to Cart</button>
+      
+      <div class="info">
+        Free Shipping • Easy Returns • Only Few Left!
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
